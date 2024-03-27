@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import moviesReducer from 'src/reducers/moviesReducer';
 import App from './App';
-import rootReducer from './reducer';
 
-const store = createStore(rootReducer);
+const store = createStore(moviesReducer);
 
 ReactDOM.render(
     <Provider store={store}>
